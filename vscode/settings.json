@@ -1,6 +1,5 @@
 {
   "telemetry.telemetryLevel": "off",
-  "diffEditor.ignoreTrimWhitespace": false,
   "editor.detectIndentation": true,
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
@@ -12,10 +11,20 @@
     "source.fixAll.eslint": true,
     "source.organizeImports": true
   },
+  "explorer.confirmDelete": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.stickyScroll.enabled": true,
   "editor.inlineSuggest.enabled": true,
-  "explorer.confirmDelete": false,
+  "editor.tokenColorCustomizations": {
+    "[Evondev Dracula Normal Contrast]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.function",
+          "settings": { "fontStyle": "bold" }
+        }
+      ]
+    }
+  },
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "MesloLGS NF",
@@ -27,7 +36,6 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.formatting.provider": "black",
   "python.testing.pytestEnabled": true,
   "[python]": {
     "editor.codeActionsOnSave": {
@@ -43,9 +51,13 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Evondev Dracula Normal Contrast",
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#ff0000",
+    "activityBarBadge.foreground": "#ffffff"
+  },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.wrapTabs": true,
-  "workbench.colorTheme": "Evondev Dracula Normal Contrast"
+  "workbench.sideBar.location": "right",
+  "window.zoomLevel": 1
 }
-

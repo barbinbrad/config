@@ -6,6 +6,7 @@ codeandstuff.package-json-upgrade
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 denoland.vscode-deno
+eamodio.gitlens
 esbenp.prettier-vscode
 evondev.dracula-high-contrast
 figma.figma-vscode-extension
