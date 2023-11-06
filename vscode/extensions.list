@@ -32,6 +32,7 @@ Prisma.prisma
 redhat.vscode-yaml
 sirmspencer.vscode-autohide
 styled-components.vscode-styled-components
+tamasfe.even-better-toml
 tehnix.vscode-tidymarkdown
 unifiedjs.vscode-mdx
 vdanchenkov.tailwind-class-sorter
