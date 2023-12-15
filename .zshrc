@@ -1,7 +1,3 @@
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
-
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
@@ -12,7 +8,6 @@ bindkey '^[OB' history-substring-search-down
 plugins=(alias-finder  brew common-aliases copydir copyfile docker docker-compose dotenv encode64 extract git jira jsontools node npm npx nvm osx urltools vscode web-search z)
 
 eval "$(pyenv init -)"
-
 eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
 
@@ -32,28 +27,42 @@ alias push="git push"
 alias pull="git pull"
 alias rebase="git rebase"
 alias podz="cd ios && arch -x86_64 pod install & cd .."
-export PATH="/Users/bbarbin/.local/bin:$PATH"
-export PATH="$HOME/.poetry/bin:$PATH"
+
 export PATH="/usr/local/Cellar/postgresql@15/15.4/bin:$PATH"
+export GI_TYPELIB_PATH="/usr/local/lib/girepository-1.0"
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+export PATH="/usr/local/opt/jpeg/bin:$PATH"
+
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.poetry/bin:$PATH"
 export PYTHONPATH="$HOME/teamworks/api"
+
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-export GI_TYPELIB_PATH="/usr/local/lib/girepository-1.0"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
 NODE_VERSION_PREFIX=v
 NODE_VERSIONS=~/.nvm/versions/node
+
 # pnpm
-export PNPM_HOME="/Users/bbarbin/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 # nvm
-export NVM_DIR="/Users/bbarbin/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# auto switch node version
 autoload -U add-zsh-hook
 
 load-nvmrc() {
@@ -78,16 +87,5 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-# aws
-export AWS_DEFAULT_PROFILE=AWSPowerUserAccess-520721845088
 
-export PATH="/usr/local/opt/libpq/bin:$PATH"
-export PATH="/usr/local/opt/jpeg/bin:$PATH"
 
-# pnpm
-export PNPM_HOME="/Users/bbarbin/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
