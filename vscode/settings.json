@@ -1,18 +1,19 @@
 {
-  "telemetry.telemetryLevel": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": true,
   "editor.fontFamily": "Geist Mono",
   "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
   "editor.fontSize": 16,
   "editor.fontWeight": 500,
+  "editor.roundedSelection": true,
   "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true
-  },
-  "explorer.confirmDelete": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.stickyScroll.enabled": true,
   "editor.inlineSuggest.enabled": true,
   "editor.tokenColorCustomizations": {
@@ -25,10 +26,13 @@
       ]
     }
   },
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "terminal.integrated.fontSize": 18,
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [120],
+  "editor.renderLineHighlight": "none",
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -39,11 +43,15 @@
   "python.testing.pytestEnabled": true,
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     },
     "editor.formatOnType": true
   },
-  "editor.rulers": [120],
+  "telemetry.telemetryLevel": "off",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 18,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -51,13 +59,14 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Evondev Dracula Normal Contrast",
+  "window.titleBarStyle": "native",
+  "workbench.activityBar.location": "top",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#ff0000",
     "activityBarBadge.foreground": "#ffffff"
   },
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Evondev Dracula High Contrast",
   "workbench.editor.wrapTabs": true,
-  "workbench.sideBar.location": "right",
-  "window.zoomLevel": 1
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right"
 }
