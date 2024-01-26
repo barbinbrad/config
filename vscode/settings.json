@@ -1,72 +1,77 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorBlinking": "smooth",
-  "editor.detectIndentation": true,
-  "editor.fontFamily": "Geist Mono",
-  "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
-  "editor.fontSize": 16,
-  "editor.fontWeight": 500,
-  "editor.roundedSelection": true,
-  "editor.tabSize": 2,
-  "editor.stickyScroll.enabled": true,
-  "editor.inlineSuggest.enabled": true,
-  "editor.tokenColorCustomizations": {
-    "[Evondev Dracula High Contrast]": {
-      "textMateRules": [
-        {
-          "scope": "entity.name.function",
-          "settings": { "fontStyle": "bold" }
-        }
-      ]
-    }
-  },
-  "editor.minimap.enabled": false,
-  "editor.overviewRulerBorder": false,
-  "editor.renderWhitespace": "none",
-  "editor.rulers": [120],
-  "editor.renderLineHighlight": "none",
-  "editor.wordWrap": "on",
-  "explorer.confirmDelete": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.testing.pytestEnabled": true,
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
     },
     "editor.formatOnType": true
   },
-  "telemetry.telemetryLevel": "off",
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "terminal.integrated.fontSize": 18,
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "apc.font.family": "Zed Mono Extended",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": true,
+  "editor.fontFamily": "Zed Mono Extended",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.fontWeight": 500,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "none",
+  "editor.roundedSelection": true,
+  "editor.rulers": [],
+  "editor.stickyScroll.enabled": true,
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "[Evondev Dracula High Contrast]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.function",
+          "settings": {
+            "fontStyle": "bold"
+          }
+        }
+      ]
+    }
+  },
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "python.testing.pytestEnabled": true,
+  "telemetry.telemetryLevel": "off",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 18,
+  "typescript.tsserver.log": "verbose",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "native",
   "workbench.activityBar.location": "top",
   "workbench.colorCustomizations": {
-    "activityBarBadge.background": "#ff0000",
-    "activityBarBadge.foreground": "#ffffff"
+    "activityBarBadge.background": "#ffaa00",
+    "activityBarBadge.foreground": "#000000"
   },
-  "workbench.colorTheme": "Evondev Dracula High Contrast",
+  "workbench.colorTheme": "Sequoia Monochrome",
   "workbench.editor.wrapTabs": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "editor.guides.indentation": false
 }
