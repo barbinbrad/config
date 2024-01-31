@@ -49,6 +49,8 @@
             "entity.other.attribute-name",
             "keyword.control",
             "keyword.operator.new",
+            "keyword.operator.expression.typeof",
+            "meta.embedded.expression",
             "meta.object-literal.key",
             "storage.modifier",
             "storage.type"
@@ -65,6 +67,7 @@
             "keyword.operator.bitwise",
             "keyword.operator.comparison",
             "keyword.operator.logical",
+            "markup.inline.raw.string.markdown",
             "meta.arrow",
             "punctuation.definition.tag",
             "punctuation.definition.string.template",
@@ -77,9 +80,11 @@
         {
           "scope": [
             "keyword.operator.optional",
-            "meta",
+
             "punctuation.accessor",
+            "punctuation.definition.keyword",
             "punctuation.separator",
+            "punctuation.support.type.property-name",
             "punctuation.terminator",
             "source.python",
             "support.variable",
@@ -100,13 +105,18 @@
         },
         {
           "scope": [
+            "constant.language.json.comments",
+            "constant.numeric.json.comments",
             "entity.name.type",
+            "entity.name.tag",
+            "entity.other.inherited-class",
             "punctuation.definition.template-expression",
             "support.class",
-            "support.type.primitive"
+            "support.type.primitive",
+            "variable.language.this"
           ],
           "settings": {
-            "foreground": "#07e7c6"
+            "foreground": "#20E3B2"
           }
         },
         {
@@ -153,10 +163,17 @@
     "editorBracketHighlight.unexpectedBracket.foreground": "#f7f7f8",
     "editorError.foreground": "#da0d51",
     "editorOverviewRuler.background": "#1e2025",
+    "editorOverviewRuler.errorForeground": "#da0d51",
+    "errorForeground": "#da0d51",
+    "list.errorForeground": "#da0d51",
     "list.hoverBackground": "#303032",
     "list.activeSelectionForeground": "#fee56d",
+    "list.focusForeground": "#fee56d",
     "sideBar.background": "#22242b",
     "sideBar.foreground": "#aca8ad",
+    "tab.activeBackground": "#47494d",
+    "tab.activeForeground": "#f7f7f8",
+
     "terminal.ansiBlack": "#21222c",
     "terminal.ansiBlue": "#bd93f9",
     "terminal.ansiBrightBlack": "#8d92ff",
@@ -178,6 +195,6 @@
   },
   "workbench.colorTheme": "Sequoia Monochrome",
   "workbench.editor.wrapTabs": true,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "city-lights-icons-vsc",
   "workbench.sideBar.location": "right"
 }
