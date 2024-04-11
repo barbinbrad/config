@@ -18,6 +18,18 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "apc.font.family": "Zed Mono Extended",
+  "apc.monospace.font.family": "Zed Mono Extended",
+  "apc.parts.font.family": {
+    "sidebar": "Zed Mono Extended",
+    "titlebar": "Zed Mono Extended",
+    "activityBar": "Zed Mono Extended",
+    "panel": "Zed Mono Extended",
+    "tabs": "Zed Mono Extended",
+    "statusbar": "Zed Mono Extended",
+    "settings-body": "Zed Mono Extended",
+    "extension-editor": "Zed Mono Extended",
+    "monaco-menu": "Zed Mono Extended"
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "explicit"
@@ -33,12 +45,13 @@
   "editor.formatOnSave": true,
   "editor.guides.indentation": false,
   "editor.inlineSuggest.enabled": true,
+
   "editor.minimap.enabled": false,
   "editor.overviewRulerBorder": false,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "none",
   "editor.roundedSelection": true,
-  "editor.rulers": [],
+
   "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
@@ -49,6 +62,7 @@
             "entity.other.attribute-name",
             "keyword.control",
             "keyword.operator.new",
+            "keyword.operator.expression.in",
             "keyword.operator.expression.typeof",
             "meta.embedded.expression",
             "meta.object-literal.key",
@@ -122,7 +136,7 @@
         {
           "scope": ["constant", "variable.other.constant.property"],
           "settings": {
-            "foreground": "#96df72"
+            "foreground": "#20e3b2"
           }
         }
       ]
@@ -137,7 +151,7 @@
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.fontSize": 18,
-  "typescript.tsserver.log": "verbose",
+  "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "native",
   "workbench.activityBar.location": "top",
@@ -151,6 +165,9 @@
     "activityBarBadge.foreground": "#000000",
     "breadcrumb.background": "#1e2025",
     "breadcrumb.foreground": "#868690",
+    "debugIcon.breakpointForeground": "#da0d51",
+    "diffEditor.insertedTextBackground": "#20E3B244",
+    "diffEditor.removedTextBackground": "#f0622f44",
     "editor.background": "#1e2025",
     "editor.selectionBackground": "#1a3b3a",
     "editor.selectionHighlightBackground": "#1a3b3a",
