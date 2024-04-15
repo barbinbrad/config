@@ -17,18 +17,18 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "apc.font.family": "Zed Mono Extended",
-  "apc.monospace.font.family": "Zed Mono Extended",
+  "apc.font.family": "Geist Mono",
+  "apc.monospace.font.family": "Geist Mono",
   "apc.parts.font.family": {
-    "sidebar": "Zed Mono Extended",
-    "titlebar": "Zed Mono Extended",
-    "activityBar": "Zed Mono Extended",
-    "panel": "Zed Mono Extended",
-    "tabs": "Zed Mono Extended",
-    "statusbar": "Zed Mono Extended",
-    "settings-body": "Zed Mono Extended",
-    "extension-editor": "Zed Mono Extended",
-    "monaco-menu": "Zed Mono Extended"
+    "sidebar": "Geist Mono",
+    "titlebar": "Geist Mono",
+    "activityBar": "Geist Mono",
+    "panel": "Geist Mono",
+    "tabs": "Geist Mono",
+    "statusbar": "Geist Mono",
+    "settings-body": "Geist Mono",
+    "extension-editor": "Geist Mono",
+    "monaco-menu": "Geist Mono"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -38,7 +38,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": true,
-  "editor.fontFamily": "Zed Mono Extended",
+  "editor.fontFamily": "Geist Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.fontWeight": 500,
@@ -149,7 +149,7 @@
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontFamily": "RobotoMono Nerd Font Mono",
   "terminal.integrated.fontSize": 18,
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
